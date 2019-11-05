@@ -29,3 +29,7 @@
 ## bot challenge
 * bot_challenge
   - utter_iamabot
+
+## Quiz Happy Flow
+* intent:start_game
+  - utter_start_game
