@@ -31,7 +31,7 @@
   - utter_iamabot
 
 ## Quiz Happy Flow
-* intent:start_game
-  - utter_start_game
-* intent:game_answer
+* game_start
+  - utter_game_start
+* game_answer
   - utter_game_answer

@@ -45,5 +45,5 @@ templates:
   utter_game_start:
   - text: "Calculate 1+1. Is it a) 3, b) 13 or c) 2?"
 
-  utter_game_start:
+  utter_game_answer:
   - text: "Wrong, the answer is 42!"
