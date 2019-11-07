@@ -33,3 +33,5 @@
 ## Quiz Happy Flow
 * intent:start_game
   - utter_start_game
+* intent:game_answer
+  - utter_game_answer

@@ -55,7 +55,7 @@
 - am I talking to a bot?
 - am I talking to a human?
 
-## intent:start_game
+## intent:game_start
 - I want to play a game.
 - let's play a game
 - play a game
