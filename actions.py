@@ -3,7 +3,8 @@
 #
 # See this guide on how to implement these action:
 # https://rasa.com/docs/rasa/core/actions/#custom-actions/
-
+######## Watch also
+# https://www.youtube.com/watch?v=W7jdIeyIPcU&t=544s
 
 # This is a simple example for a custom action which utters "Hello World!"
 
@@ -19,7 +20,7 @@ class ActionHelloWorld(Action):
          return "action_hello_world"
 
      def run(self, dispatcher: CollectingDispatcher,
-             tracker: Tracker,
+             tracker: Tracker, 
              domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
          dispatcher.utter_message("Hello World!")
@@ -28,15 +29,15 @@ class ActionHelloWorld(Action):
 
 class ActionTestSheet(Action):
      def name(self) -> Text:
-          return "acttion_test_sheet"
-     
+          return "action_test_backend"
      
      ### get a sheets cell
      
      def run(self, dispatcher: CollectingDispatcher,
              tracker: Tracker,
              domain: Dict[Text, Any]) -> List [Dict[Text, Any]]:
-             
-          dispatcher.utter_message("Hello World!")
+          
+          ## get a value of my sheet
+          dispatcher.utter_message(sheets.getValue())
           
           return []

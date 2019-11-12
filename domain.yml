@@ -8,6 +8,7 @@ intents:
   - bot_challenge
   - game_start
   - game_answer
+  - test_backend
 
 entities: 
   - answer
@@ -21,6 +22,7 @@ actions:
 - utter_iamabot
 - utter_game_start
 - utter_game_answer
+- action_test_backend
 
 templates:
   utter_greet:

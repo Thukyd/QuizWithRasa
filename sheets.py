@@ -13,9 +13,10 @@ data = sheet.get_all_records()  # Get a list of all records
 
 ###### Operations
 # TODOs
-def getValue(self):
+def getValue():
     try:
         cell = sheet.cell(1,2).value  # Get the value of a specific cell
         return cell
     except:
         return "Error"
+
