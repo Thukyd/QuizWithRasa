@@ -25,3 +25,14 @@ class ActionHelloWorld(Action):
          dispatcher.utter_message("Hello World!")
 
          return []
+
+class ActionTestSheet(Sheet):
+     def name(self) -> Text:
+          return ### get a sheets cell
+     
+     def run(self, dispatcher: CollectingDispatcher,
+             tracker: Tracker,
+             domain: Dict[Text, Any]) -> List [Dict[Text, Any]]:
+          dispatcher.utter_message("Hello World!")
+          
+          return []
