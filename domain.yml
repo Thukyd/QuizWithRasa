@@ -20,9 +20,9 @@ actions:
 - utter_happy
 - utter_goodbye
 - utter_iamabot
-- utter_game_start
 - utter_game_answer
 - action_test_backend
+- action_game_start
 
 templates:
   utter_greet:
@@ -43,9 +43,6 @@ templates:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
-
-  utter_game_start:
-  - text: "Calculate 1+1. Is it a) 3, b) 13 or c) 2?"
 
   utter_game_answer:
   - text: "Wrong, the answer is 42!"

@@ -32,7 +32,7 @@
 
 ## Quiz Happy Flow
 * game_start
-  - utter_game_start
+  - action_game_start
 * game_answer
   - utter_game_answer
 

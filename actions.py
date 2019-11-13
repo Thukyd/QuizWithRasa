@@ -41,3 +41,18 @@ class ActionTestBackend(Action):
           dispatcher.utter_message(sheets.getValue())
           
           return []
+
+class ActionGameStart(Action):
+     def name(self) -> Text:
+          return "action_game_start"
+     
+     ### get a sheets cell
+     
+     def run(self, dispatcher: CollectingDispatcher,
+             tracker: Tracker,
+             domain: Dict[Text, Any]) -> List [Dict[Text, Any]]:
+          
+          ## get a value of my sheet
+          response = "Of course. Here is the first question: " + sheets.getValue() + "?"
+          dispatcher.utter_message(response)
+          return []
