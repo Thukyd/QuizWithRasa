@@ -20,3 +20,12 @@ def getValue():
     except:
         return "Error"
 
+def getAnswers(row):
+    try: 
+        cellA = sheet.cell(row,3).value
+        cellB = sheet.cell(row,4).value
+        cellC = sheet.cell(row,5).value
+        anwsers = {"a": cellA, "b": cellB, "c": cellC}
+        return anwsers
+    except:
+        return "Error"

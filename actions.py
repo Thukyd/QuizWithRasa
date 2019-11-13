@@ -53,6 +53,7 @@ class ActionGameStart(Action):
              domain: Dict[Text, Any]) -> List [Dict[Text, Any]]:
           
           ## get a value of my sheet
-          response = "Of course. Here is the first question: " + sheets.getValue() + "?"
+          data = sheets.getAnswers(4)
+          response = "Ok, what is the meaning of life?\n Is it a) " + data["a"] + ", b)" + data["b"] + " or c) " + data["c"] + "?"
           dispatcher.utter_message(response)
           return []
