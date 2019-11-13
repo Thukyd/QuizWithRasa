@@ -27,7 +27,7 @@ class ActionHelloWorld(Action):
 
          return []
 
-class ActionTestSheet(Action):
+class ActionTestBackend(Action):
      def name(self) -> Text:
           return "action_test_backend"
      
