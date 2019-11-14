@@ -3,6 +3,7 @@
 What do I do?
 - 
 - ....a Rasa based quiz bot ...
+- ... share guides and information ...
 - ... to be descibed ... 
 
 
@@ -23,7 +24,9 @@ Development status:
 - [ ] seperation of Dialog Manager & Content
 
 
-Info  status:  
+
+
+Docs & further information:  
 - 
 - [ ] Rasa Doc: Evaluating Models - https://rasa.com/docs/rasa/user-guide/evaluating-models/
 - [x] building a multi-channel chatbot with Rasa : https://medium.com/datadriveninvestor/building-a-multi-channel-chatbot-with-rasa-bf8d74a938a1
