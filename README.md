@@ -35,3 +35,4 @@ Docs & further information:
 - [ ] Lemonade Bot with Rasa https://hackernoon.com/build-simple-chatbot-with-rasa-part-1-f4c6d5bb1aea
 - [ ] Coursera NLP - https://www.coursera.org/learn/language-processing
 - [ ] Generate Training data - https://rasa.com/docs/rasa/nlu/training-data-format/#generating-more-entity-examples & https://rodrigopivi.github.io/Chatito/
+- [ ] Supervised Word Vectors from Scratch - https://medium.com/rasa-blog/supervised-word-vectors-from-scratch-in-rasa-nlu-6daf794efcd8
