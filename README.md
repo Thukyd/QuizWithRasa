@@ -34,4 +34,4 @@ Docs & further information:
 - [ ] explanation of NLU pipeline components  https://hackernoon.com/demystifying-rasa-nlu-1-training-91a08429c9fb
 - [ ] Lemonade Bot with Rasa https://hackernoon.com/build-simple-chatbot-with-rasa-part-1-f4c6d5bb1aea
 - [ ] Coursera NLP - https://www.coursera.org/learn/language-processing
-- [ ] Generate Training data - https://rasa.com/docs/rasa/nlu/training-data-format/#generating-more-entity-examples
+- [ ] Generate Training data - https://rasa.com/docs/rasa/nlu/training-data-format/#generating-more-entity-examples & https://rodrigopivi.github.io/Chatito/
