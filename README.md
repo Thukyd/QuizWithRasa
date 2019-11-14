@@ -2,7 +2,8 @@
 
 What do I want to do?
 - 
-- ....a Rasa based quiz bot
+- ....a Rasa based quiz bot ...
+- ... to be descibed ... 
 
 Why do I want to do it?
 - 
@@ -19,4 +20,4 @@ Development status:
 - [ ] documentation for sheet structure & link "how to setup sheets"
 - [ ] module for Sheets Operations
 - [ ] seperation of Dialog Manager & Content
-- [ ] 
+
