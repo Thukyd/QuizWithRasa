@@ -1,14 +1,14 @@
 # Template QuizWithRasa
 
-What do I want to do?
+What do I do?
 - 
 - ....a Rasa based quiz bot ...
 - ... to be descibed ... 
 
-Why do I want to do it?
+Why do I do it?
 - 
-- get familiar with python again
-- get into rasa 
+- gain experience with Rasa stack
+- get familiar with python again...
 - create a bot template with a simple CMS based on Google Sheets
 
 
