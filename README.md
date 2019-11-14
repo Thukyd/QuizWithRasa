@@ -26,7 +26,7 @@ Development status:
 
 
 
-Docs & further information:  
+Readin List:  
 - 
 - [ ] Rasa Doc: Evaluating Models - https://rasa.com/docs/rasa/user-guide/evaluating-models/
 - [x] building a multi-channel chatbot with Rasa : https://medium.com/datadriveninvestor/building-a-multi-channel-chatbot-with-rasa-bf8d74a938a1
@@ -36,3 +36,4 @@ Docs & further information:
 - [ ] Coursera NLP - https://www.coursera.org/learn/language-processing
 - [ ] Generate Training data - https://rasa.com/docs/rasa/nlu/training-data-format/#generating-more-entity-examples & https://rodrigopivi.github.io/Chatito/
 - [ ] Supervised Word Vectors from Scratch - https://medium.com/rasa-blog/supervised-word-vectors-from-scratch-in-rasa-nlu-6daf794efcd8
+- [ ] Multi-Intent Detection per input - https://blog.rasa.com/how-to-handle-multiple-intents-per-input-using-rasa-nlu-tensorflow-pipeline/?_ga=2.170456032.1537025126.1573725306-783128667.1563974875
