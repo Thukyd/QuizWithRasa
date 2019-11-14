@@ -46,3 +46,4 @@ Reading List, Courses & Tools:
           https://medium.com/rasa-blog/supervised-word-vectors-from-scratch-in-rasa-nlu-6daf794efcd8
 - [ ] Multi-Intent Detection per input
           https://blog.rasa.com/how-to-handle-multiple-intents-per-input-using-rasa-nlu-tensorflow-pipeline/?_ga=2.170456032.1537025126.1573725306-783128667.1563974875
+- [ ] Spacy & other Demos https://explosion.ai/software
