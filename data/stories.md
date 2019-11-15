@@ -42,4 +42,4 @@
   - action_game_question
 * game_answer
   - action_game_question
-  -utter_game_result
+  - utter_game_result
