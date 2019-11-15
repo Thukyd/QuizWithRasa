@@ -73,7 +73,8 @@ def getQuestionRound(row):
 			"image": image
 		}	
 		return data 
-		
+	except: 
+		return "Error getQuestionRound()"
 
 
 # TODO: Get topics of questions and where they can be found 
