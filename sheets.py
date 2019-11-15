@@ -16,13 +16,17 @@ data = sheet.get_all_records()  # Get a list of all records
 # get quiz answer
 def getAnswers(row):
     try: 
-        cellA = sheet.cell(row,3).value
-        cellB = sheet.cell(row,4).value
-        cellC = sheet.cell(row,5).value
-        anwsers = {"a": cellA, "b": cellB, "c": cellC}
+        correctAnswer = sheet.cell(row,3).value
+        wrongAnswer1 = sheet.cell(row,4).value
+        wrongAnswer2 = sheet.cell(row,5).value
+        anwsers = {"correct": cellA, "wrong1": cellB, "wrong2": cellC}
         return anwsers
     except:
         return "Error getAnswers()"
+
+# TODO : Mix up answers
+    # input call answers
+    # output strucutre of answers which adds randomly a, b, c to it; if a answer is wrong or correct should still be detectable 
 
 # get question
 def getQuestion(row):
