@@ -1,4 +1,5 @@
 import gspread
+import random
 from oauth2client.service_account import ServiceAccountCredentials
 
 ###### Configuration Sheets
@@ -13,20 +14,25 @@ data = sheet.get_all_records()  # Get a list of all records
 
 ###### Operations
 
-# get quiz answer
+# shuffle answers
+def shufflAnswers(colX, colY, colZ):
+    # Todo add, true / false, then shuffle
+    # output: Json structure {a }
+    #shuffleArray = [a, b ,c]
+    #random.shuffle(shuffleArray)
+    return 
+    # return list of answers 
+
+# get quiz answer & shuffle answers
 def getAnswers(row):
     try: 
-        cellA = sheet.cell(row,3).value
-        cellB = sheet.cell(row,4).value
-        cellC = sheet.cell(row,5).value
-        anwsers = {"correct": cellA, "wrong1": cellB, "wrong2": cellC}
-        return anwsers
+        colX = sheet.cell(row,3).value
+        colY = sheet.cell(row,4).value
+        colZ = sheet.cell(row,5).value
+        answers = shufflAnswers(colX, colY, colZ)
+        return answers
     except:
         return "Error getAnswers()"
-
-# TODO : Mix up answers
-    # input call answers
-    # output strucutre of answers which adds randomly a, b, c to it; if a answer is wrong or correct should still be detectable 
 
 # get question
 def getQuestion(row):
