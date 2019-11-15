@@ -16,9 +16,9 @@ data = sheet.get_all_records()  # Get a list of all records
 # get quiz answer
 def getAnswers(row):
     try: 
-        correctAnswer = sheet.cell(row,3).value
-        wrongAnswer1 = sheet.cell(row,4).value
-        wrongAnswer2 = sheet.cell(row,5).value
+        cellA = sheet.cell(row,3).value
+        cellB = sheet.cell(row,4).value
+        cellC = sheet.cell(row,5).value
         anwsers = {"correct": cellA, "wrong1": cellB, "wrong2": cellC}
         return anwsers
     except:
