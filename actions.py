@@ -27,21 +27,6 @@ class ActionHelloWorld(Action):
 
          return []
 
-class ActionTestBackend(Action):
-     def name(self) -> Text:
-          return "action_test_backend"
-     
-     ### get a sheets cell
-     
-     def run(self, dispatcher: CollectingDispatcher,
-             tracker: Tracker,
-             domain: Dict[Text, Any]) -> List [Dict[Text, Any]]:
-          
-          ## get a value of my sheet
-          dispatcher.utter_message(sheets.getValue())
-          
-          return []
-
 class ActionGameStart(Action):
      def name(self) -> Text:
           return "action_game_start"

@@ -84,7 +84,3 @@
 - ok, i choose [b] (answer)
 - that's easy, it's [c] (answer)
 - no brainer! the answer is [a] (answer)
-
-
-## intent:test_backend
-- test
