@@ -12,14 +12,8 @@ sheet = client.open("Learning NLU").sheet1  # Open the spreadhseet
 data = sheet.get_all_records()  # Get a list of all records
 
 ###### Operations
-# TODOs
-def getValue():
-    try:
-        cell = sheet.cell(1,2).value  # Get the value of a specific cell
-        return cell
-    except:
-        return "Error"
 
+# get quiz answer
 def getAnswers(row):
     try: 
         cellA = sheet.cell(row,3).value
@@ -28,4 +22,50 @@ def getAnswers(row):
         anwsers = {"a": cellA, "b": cellB, "c": cellC}
         return anwsers
     except:
-        return "Error"
+        return "Error getAnswers()"
+
+# get question
+def getQuestion(row):
+    try: 
+        question = sheet.cell(row,2)
+        return question
+    except: 
+        return "Error getQuestion()"
+
+def getInfoURL(row):
+    try: 
+        infoURL = sheet.cell(row,6)
+        return infoURL
+    except: 
+        return "Error getInfoURL()"
+
+def getInfoGraphc(row):
+    try: 
+        infoGraphic = sheet.cell(row,7)
+        return infoGraphic
+    except: 
+        return "Error getInfoGraphc()"
+
+# TODO: Get topics of questions and where they can be found 
+    #   input = null
+    #   output = strutured 
+    #   output: [
+    # {
+    #        "Rasa Pipeline": [2,6]       
+    #       }, ...
+    # ]
+    # Topic + content is from row x to row y 
+
+# TODO: Get a random row
+    # input = null
+    # outpur = row
+
+# TODO: Get a random row for a specific topic
+    # input = get which rows are relevant ["from row x", "till row y"]
+    # output = row
+
+
+# TODO - last step
+    # write two function which combine these upper function
+    # case 1: random question => output a structure with question, answers etc.
+    # case 2: specific topic question => outuput a structure with question, answers etc. for this topic
