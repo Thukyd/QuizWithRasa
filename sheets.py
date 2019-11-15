@@ -27,21 +27,21 @@ def getAnswers(row):
 # get question
 def getQuestion(row):
     try: 
-        question = sheet.cell(row,2)
+        question = sheet.cell(row,2).value
         return question
     except: 
         return "Error getQuestion()"
 
 def getInfoURL(row):
     try: 
-        infoURL = sheet.cell(row,6)
+        infoURL = sheet.cell(row,6).value
         return infoURL
     except: 
         return "Error getInfoURL()"
 
 def getInfoGraphc(row):
     try: 
-        infoGraphic = sheet.cell(row,7)
+        infoGraphic = sheet.cell(row,7).value
         return infoGraphic
     except: 
         return "Error getInfoGraphc()"
