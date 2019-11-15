@@ -58,6 +58,24 @@ def getInfoGraphic(row):
     except: 
         return "Error getInfoGraphic()"
 
+def getQuestionRound(row):
+	try: 
+		#TODO: What if the row is empty? Handle it! ==> field should be null
+		question = getQuestion(row)
+		answers = getAnswers(row) 
+		url = getInfoURL(row)		
+		image = getInfoGraphic(row)
+		
+		singleRound = {
+			"question": question,
+			"answers" : answers,
+			"url" : url,
+			"image": image
+		}	
+		return data 
+		
+
+
 # TODO: Get topics of questions and where they can be found 
     #   input = null
     #   output = strutured 
