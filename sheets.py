@@ -14,14 +14,16 @@ data = sheet.get_all_records()  # Get a list of all records
 
 ###### Operations
 
-# shuffle answers
-def shufflAnswers(colX, colY, colZ):
-    # Todo add, true / false, then shuffle
-    # output: Json structure {a }
-    #shuffleArray = [a, b ,c]
-    #random.shuffle(shuffleArray)
-    return 
-    # return list of answers 
+# mark true/false & shuffle
+def shuffleAnswers(colX, colY, colZ):
+    shuffleArray = [[colX, True], [colY, False] , [colZ, False]]
+    random.shuffle(shuffleArray)
+    data = {
+        "a" : shuffleArray[0],
+        "b" : shuffleArray[1],
+        "c" : shuffleArray[2],
+    }
+    return data
 
 # get quiz answer & shuffle answers
 def getAnswers(row):
@@ -29,7 +31,7 @@ def getAnswers(row):
         colX = sheet.cell(row,3).value
         colY = sheet.cell(row,4).value
         colZ = sheet.cell(row,5).value
-        answers = shufflAnswers(colX, colY, colZ)
+        answers = shuffleAnswers(colX, colY, colZ)
         return answers
     except:
         return "Error getAnswers()"
