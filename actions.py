@@ -27,9 +27,9 @@ class ActionHelloWorld(Action):
 
          return []
 
-class ActionGameStart(Action):
+class ActionGameQuestion(Action):
      def name(self) -> Text:
-          return "action_game_start"
+          return "action_game_question"
      
      ### get a sheets cell
      
@@ -38,7 +38,8 @@ class ActionGameStart(Action):
              domain: Dict[Text, Any]) -> List [Dict[Text, Any]]:
           
           ## get a value of my sheet
-          data = sheets.getAnswers(4)
-          response = "Ok, what is the meaning of life?\n Is it a) " + data["a"] + ", b)" + data["b"] + " or c) " + data["c"] + "?"
+          #TODO: Adapt to new structure of sheets
+          #data = sheets.getAnswers(4)
+          #response = "Ok, what is the meaning of life?\n Is it a) " + data["a"] + ", b)" + data["b"] + " or c) " + data["c"] + "?"
           dispatcher.utter_message(response)
           return []
