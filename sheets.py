@@ -51,12 +51,12 @@ def getInfoURL(row):
     except: 
         return "Error getInfoURL()"
 
-def getInfoGraphc(row):
+def getInfoGraphic(row):
     try: 
         infoGraphic = sheet.cell(row,7).value
         return infoGraphic
     except: 
-        return "Error getInfoGraphc()"
+        return "Error getInfoGraphic()"
 
 # TODO: Get topics of questions and where they can be found 
     #   input = null
