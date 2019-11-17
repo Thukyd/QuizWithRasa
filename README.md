@@ -2,7 +2,7 @@
 
 What do I do?
 - 
-- ....a Rasa based quiz bot ...
+- ....a Rasa based quiz bot & vocabulary bot ...
 - ... share guides and information ...
 - ... to be descibed ... 
 
@@ -16,13 +16,14 @@ Why do I do it?
 
 Development status:  
 - 
-- [ ] full conversaton flow (description)
-- [ ] NLU training
-- [x] connection to Google Sheets 
+- [x] full conversaton flow (description)
+- [x] NLU training
+- [x] connection to Google Sheets
+- [ ] business logic quiz
+- [ ] business logic vocab trainer
 - [ ] documentation for sheet structure & link "how to setup sheets"
 - [ ] module for Sheets Operations
 - [ ] seperation of Dialog Manager & Content
-
 
 
 
@@ -32,7 +33,7 @@ Reading List, Courses & Tools:
           https://rasa.com/docs/rasa/user-guide/evaluating-models/
 - [x] building a multi-channel chatbot with Rasa
           https://medium.com/datadriveninvestor/building-a-multi-channel-chatbot-with-rasa-bf8d74a938a1
-- [ ] basic concepts
+- [x] basic concepts
           https://itnext.io/building-a-chatbot-with-rasa-9c3f3c6ad64d
 - [ ] explanation of NLU pipeline components  
           https://hackernoon.com/demystifying-rasa-nlu-1-training-91a08429c9fb
