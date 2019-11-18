@@ -1,6 +1,7 @@
 import gspread
 import random
 from oauth2client.service_account import ServiceAccountCredentials
+import json
 
 ###### Configuration Sheets
 # set scope for access
@@ -71,10 +72,20 @@ def getQuestionRound(row):
 			"answers" : answers,
 			"url" : url,
 			"image": image
-		}	
-		return data 
+		}
+
+		return singleRound
 	except: 
 		return "Error getQuestionRound()"
+
+####### Example output
+#   
+#    {'answers': {'a': ['A2', True], 'b': ['C2', False], 'c': [' B2', False]},
+#    'image': 'https://www.youtube.com/watch?v=ET1k9OrsfYQ&t=11s',
+#    'question': 'What is a Whitespace Tokenizer?',
+#    'url': 'http://groonga.org/docs/images/used-when-indexing.png'
+#    }
+
 
 
 # TODO: Get topics of questions and where they can be found 

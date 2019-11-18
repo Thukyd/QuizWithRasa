@@ -1,17 +1,3 @@
-## intent:greet
-- hey
-- hello
-- hi
-- good morning
-- good evening
-- hey there
-
-## intent:goodbye
-- bye
-- goodbye
-- see you around
-- see you later
-
 ## intent:affirm
 - yes
 - indeed
@@ -27,6 +13,24 @@
 - no way
 - not really
 
+## intent:game_answer
+- it's [a](answer_option)
+- ok, i choose [b](answer_option)
+- i would take [a](answer_option)
+- maybe it's [c](answer_option)
+- how about [b](answer_option)
+- maybe [a](answer_option)
+- i think it's [c](answer_option)
+- i choose [b](answer_option)
+- the  is [a](answer_option)
+- [c](answer_option)  is the answer
+- yeah it's [b](answer_option)
+- [a](answer_option)
+- only [c](answer_option)
+- of course [b](answer_option)
+- that's easy, it's [c](answer_option)
+- no brainer! the answer is [a](answer_option)
+
 ## intent:game_start
 - I want to play a game.
 - let's play a game
@@ -39,20 +43,16 @@
 - let us start
 - ok, let's begin
 
-## intent:game_answer
-- it's [a] (answer)
-- of course [b] (answer)
-- only [c] (answer)
-- [a] (answer)
-- yeah it's [b] (answer)
-- [c] (answer) is the answer
-- the answer is [a] (answer)
-- i choose [b] (answer)
-- i think it's [c] (answer)
-- maybe [a] (answer)
-- how about [b] (answer)
-- maybe it's [c] (answer)
-- i would take [a] (answer)
-- ok, i choose [b] (answer)
-- that's easy, it's [c] (answer)
-- no brainer! the answer is [a] (answer)
+## intent:goodbye
+- bye
+- goodbye
+- see you around
+- see you later
+
+## intent:greet
+- hey
+- hello
+- hi
+- good morning
+- good evening
+- hey there

@@ -1,18 +1,35 @@
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - game_start
-  - game_answer
-  - test_backend
-
-entities: 
-  - answer
-
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- game_start
+- game_answer
+entities:
+- answer_option
+templates:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_game_answer:
+  - text: Wrong, the answer is 42!
+  utter_game_start:
+  - text: ok, lets start!
+  utter_game_result:
+  - text: You lost!
 actions:
 - utter_greet
 - utter_cheer_up
@@ -22,30 +39,5 @@ actions:
 - utter_iamabot
 - action_game_question
 - utter_game_start
+- utter_game_answer
 - utter_game_result
-
-templates:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
-  utter_game_start:
-  - text: "all right, let's play"
-  
-  utter_game_result: 
-  - text: "Amazing, you won"
