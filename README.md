@@ -13,6 +13,10 @@ Why do I do it?
 - get familiar with python again...
 - create a bot template with a simple CMS based on Google Sheets
 
+Files Missing:
+- 
+- credentials.yml
+- credentials/sheets.json
 
 Development status:  
 - 
