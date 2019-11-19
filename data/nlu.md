@@ -42,6 +42,9 @@
 - can we start
 - let us start
 - ok, let's begin
+- lass uns starten
+- ok, lass uns starten
+- good, lets start
 
 ## intent:goodbye
 - bye
