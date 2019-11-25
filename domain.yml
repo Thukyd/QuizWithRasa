@@ -3,8 +3,6 @@ intents:
 - goodbye
 - affirm
 - deny
-- mood_great
-- mood_unhappy
 - bot_challenge
 - game_start
 - game_answer
@@ -26,10 +24,15 @@ templates:
   - text: I am a bot, powered by Rasa.
   utter_game_answer:
   - text: Wrong, the answer is 42!
+  - text: hell yeah, 42 is correct.
+  - text: no, XYZ is not a number - idot!
   utter_game_start:
   - text: ok, lets start!
   utter_game_result:
   - text: You lost!
+  utter_answer_fallback:
+  - text: Sorry, didn't get that. Do you choose a, b, or c?
+  - text: ''
 actions:
 - utter_greet
 - utter_cheer_up
@@ -41,3 +44,4 @@ actions:
 - utter_game_start
 - utter_game_answer
 - utter_game_result
+- utter_answer_fallback

@@ -30,6 +30,12 @@
 - of course [b](answer_option)
 - that's easy, it's [c](answer_option)
 - no brainer! the answer is [a](answer_option)
+- i am 100% sure the correct answer is [a](answer_option)
+- ah, of course i mean [c](answer_option)
+- this one is [b](answer_option) maybe
+- i think it's 4
+- for sure it has to be [a](answer_option)
+- i think it's [b](answer_option), right?
 
 ## intent:game_start
 - I want to play a game.
@@ -45,6 +51,10 @@
 - lass uns starten
 - ok, lass uns starten
 - good, lets start
+- let's start a game
+- ok, let's start a game
+- start a quiz
+- lets start
 
 ## intent:goodbye
 - bye
