@@ -12,8 +12,9 @@
 ######################
 ### How to run the bot in a test: https://www.youtube.com/watch?v=W7jdIeyIPcU
 ### "rasa run actions & rasa shell"
-
-
+######################
+### Run Rasa with Rasa X
+### rasa run actions & rasa x
 
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
