@@ -1,0 +1,18 @@
+[
+  {
+    "text": "a",
+    "intent": "game_answer",
+    "intent_prediction": {
+      "name": "",
+      "confidence": 0.0
+    }
+  },
+  {
+    "text": "of course b",
+    "intent": "game_answer",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.6904231309890747
+    }
+  }
+]

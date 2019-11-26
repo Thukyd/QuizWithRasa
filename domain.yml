@@ -4,13 +4,17 @@ intents:
 - affirm
 - deny
 - bot_challenge
-- game_start
+- game_round
 - game_answer
+- game_mode
+- game_topic
+- game_start
 entities:
-- answer_option
+- e_answer_option
+- e_game_mode
 templates:
   utter_greet:
-  - text: Hey! How are you?
+  - text: Welcome to my quiz! Do you need instructions or can we start?
   utter_cheer_up:
   - text: 'Here is something to cheer you up:'
     image: https://i.imgur.com/nGF1K8f.jpg
@@ -27,12 +31,19 @@ templates:
   - text: hell yeah, 42 is correct.
   - text: no, XYZ is not a number - idot!
   utter_game_start:
-  - text: ok, lets start!
+  - text: Want to play a specific topic or jus
   utter_game_result:
   - text: You lost!
   utter_answer_fallback:
   - text: Sorry, didn't get that. Do you choose a, b, or c?
-  - text: ''
+  utter_game_mode:
+  - text: Do you want questions from a specific subject?
+  utter_game_topic:
+  - text: Do you want to play "NLU", "Rasa" or "Dialogflow"?
+  utter_game_topic_chosen:
+  - text: NLU question are a good pick!
+  utter_game_round:
+  - text: Ok, here is round X!
 actions:
 - utter_greet
 - utter_cheer_up
@@ -41,7 +52,10 @@ actions:
 - utter_goodbye
 - utter_iamabot
 - action_game_question
-- utter_game_start
+- utter_game_round
 - utter_game_answer
 - utter_game_result
 - utter_answer_fallback
+- utter_game_mode
+- utter_game_topic
+- utter_game_topic_chosen

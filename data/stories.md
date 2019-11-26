@@ -6,19 +6,31 @@
 * bot_challenge
   - utter_iamabot
 
-## Happy Flow
+## Happy - Open Mode
 
 * greet
-    - utter_iamabot
+    - utter_greet
 * game_start
-    - utter_game_start
+    - utter_game_mode
+* game_mode{"e_game_mode":"open"}
+    - utter_game_round
     - action_game_question
-* game_answer{"answer_option":"a"}
+* game_answer{"e_answer_option":"a"}
     - utter_game_answer
+    - utter_game_result
+
+## Happy - Topic Mode
+
+* greet
+    - utter_greet
+* game_start
+    - utter_game_mode
+* game_mode{"e_game_mode":"topic"}
+    - utter_game_topic
+* game_topic{"e_game_topic":"NLU"}
+    - utter_game_topic_chosen
+    - utter_game_round
     - action_game_question
-* game_answer{"answer_option":"b"}
-    - utter_game_answer
-    - action_game_question
-* game_answer{"answer_option":"a"}
+* game_answer{"e_answer_option":"a"}
     - utter_game_answer
     - utter_game_result

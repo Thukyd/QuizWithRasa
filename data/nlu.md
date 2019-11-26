@@ -36,6 +36,9 @@
 - i think it's 4
 - for sure it has to be [a](answer_option)
 - i think it's [b](answer_option), right?
+- and [c](answer_option)
+- [b](answer_option)
+- its [a](answer_option)
 
 ## intent:game_start
 - I want to play a game.
@@ -55,6 +58,7 @@
 - ok, let's start a game
 - start a quiz
 - lets start
+- lets start a quiz
 
 ## intent:goodbye
 - bye
@@ -69,3 +73,23 @@
 - good morning
 - good evening
 - hey there
+- Hi
+
+## intent:game_mode
+- I will pick [open](game_mode) 
+- how about [open](game_mode)
+- [open](game_mode)
+- i want to play in [open](game_mode) mode
+- i want open questions [open](game_mode)
+- i want to choose a [topic](game_mode)
+- what are the [topics](game_mode)
+
+## intent:game_topics
+- I choose [NLU](game_topic)
+- [Dialogflow](game_topic)
+- [Rasa](game_topic) sounds good
+- How about [NLU](game_topic)
+- I prefer [Dialogflow](game_topic)
+- [Rasa](game_topic) would be a nice start
+- aehm [NLU](game_topic)
+- [Dialogflow](game_topic) for sure
