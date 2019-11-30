@@ -11,7 +11,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_name("./credentials/credenti
 client = gspread.authorize(creds)
 # get sheets data
 sheet = client.open("Learning NLU").sheet1  # Open the spreadhseet
-data = sheet.get_all_records()  # Get a list of all records
+#data = sheet.get_all_records()  # Get a list of all records
 
 ###### Operations
 
@@ -97,7 +97,6 @@ def getQuestionRound(row):
 #    }
 
 
-
 # TODO: Get topics of questions and where they can be found 
 	#   input = null
 	#   output = strutured 
@@ -107,6 +106,32 @@ def getQuestionRound(row):
 	#       }, ...
 	# ]
 	# Topic + content is from row x to row y 
+
+# find all topic names
+def getTopics():
+	try:
+		allTopicValues = sheet.col_values(1)
+		# get unique topics
+		topics = set(allTopicValues)
+		# remove headline
+		topics.remove("Topic") 
+		return topics
+	except: 
+		return "Error getTopics()"
+
+# find the rows for a specific topic
+	# 1. find all cells with topic name as content
+	# 2. filter out 
+		## logic => [return rowNumber for all_rows in findAllRows if colum == 1]
+		## see also https://stackoverflow.com/questions/30919430/how-to-filter-python-list-with-multiple-criteria
+		# _row & _col are part of gspread library
+def getTopicRows(topicName):
+	try:
+		findAllRows = sheet.findall(topicName)
+		filteredTopics = [i._row for i in findAllRows if str(i._col) in ["1"]]
+		return filteredTopics
+	except:
+		return "Error getTopicRows()"
 
 # TODO: Get a random row
 	# input = null

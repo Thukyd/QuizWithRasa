@@ -21,3 +21,12 @@ pprint(data["answers"]["a"][0])
 
 pprint("************** Answers true or false? *******************")
 pprint(data["answers"]["a"][1])
+
+pprint("************** All topics *******************")
+data = sheets.getTopics()
+pprint(data)
+
+pprint("************** All rows of NLP topic *******************")
+pprint("The topic NLP is in following rows")
+data = sheets.getTopicRows("NLP")
+pprint(data)
