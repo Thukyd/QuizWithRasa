@@ -133,6 +133,11 @@ def getTopicRows(topicName):
 	except:
 		return "Error getTopicRows()"
 
+def getAllRows():
+	# TODO: should be like topicRows but return all rows which are filled with content
+	return 0
+
+
 # TODO: Get a random row
 	# input = null
 	# outpur = row
