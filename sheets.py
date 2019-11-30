@@ -134,13 +134,24 @@ def getTopicRows(topicName):
 		return "Error getTopicRows()"
 
 def getAllRows():
+	try:
+		values_list = sheet.col_values(1)
+		totalRows = len(values_list)
+		return totalRows
 	# TODO: should be like topicRows but return all rows which are filled with content
-	return 0
+	except:
+		return "Error getAllRows()"
 
 
 # TODO: Get a random row
-	# input = null
-	# outpur = row
+def getRandomRow():
+	try:
+		rangeFrom = 1 # do not include headings
+		rangeTill = getAllRows()
+		randomRow = random.randrange(rangeFrom, rangeTill)
+		return randomRow
+	except: 
+		return "Error getRandomRow()"
 
 # TODO: Get a random row for a specific topic
 	# input = get which rows are relevant ["from row x", "till row y"]
